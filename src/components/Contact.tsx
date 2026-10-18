@@ -1,3 +1,4 @@
+import Arrow from './Arrow';
 import { useState, type FormEvent } from 'react';
 
 export default function Contact({paused,onToggle}:{paused:boolean;onToggle:()=>void}) {
@@ -27,10 +28,10 @@ export default function Contact({paused,onToggle}:{paused:boolean;onToggle:()=>v
     </div>
     <label>What's the idea?<textarea name="message" required minLength={10} maxLength={5000} rows={5} placeholder="A new website, a fresh perspective, or something a little unexpected…" /></label>
     <div className="contact-trap" aria-hidden="true"><label>Leave this empty<input name="website" tabIndex={-1} autoComplete="off" /></label></div>
-    <button className="contact-submit" type="submit" disabled={status==='sending'}>{status==='sending'?'Sending…':'Send message'}<span aria-hidden="true">↗</span></button>
+    <button className="contact-submit" type="submit" disabled={status==='sending'}>{status==='sending'?'Sending…':'Send message'}<span aria-hidden="true"><Arrow/></span></button>
     <div className="contact-status" role="status" aria-live="polite">{status==='success'&&"Thanks! Your message is on its way. I'll be in touch."}{status==='error'&&"Your message couldn't be sent. Please try again in a moment."}</div>
    </form>
   </div>
-  <footer className="footer"><span>© 2026 AK</span><div className="footer-links"><button className="motion" aria-pressed={paused} onClick={onToggle}>{paused?'Resume motion':'Pause motion'}</button><a href="#">Back to top ↑</a></div></footer>
+  <footer className="footer"><span>© 2026 AK</span><div className="footer-links"><button className="motion" aria-pressed={paused} onClick={onToggle}>{paused?'Resume motion':'Pause motion'}</button><a href="#">Back to top <Arrow direction="up"/></a></div></footer>
  </section>;
 }

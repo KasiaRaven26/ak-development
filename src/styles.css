@@ -42,3 +42,5 @@ nav .nav-contact::after{display:none}
 .contact-form input:focus,.contact-form textarea:focus{outline:none;border-bottom-color:var(--ink);box-shadow:0 1px 0 var(--ink)}
 
 .contact-email{font-size:17px;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+
+.arrow-icon{display:inline-block;width:1em;height:1em;vertical-align:-.15em;flex-shrink:0}.round-link .arrow-icon{width:28px;height:28px}.nav-contact,.dialog-link,.footer-links>a{display:inline-flex;align-items:center;gap:6px}

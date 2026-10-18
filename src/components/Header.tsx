@@ -1,1 +1,2 @@
-export default function Header(){return (<header><a className="brand" href="#" aria-label="Kasia Kruk home">AK<span>®</span></a><nav aria-label="Main navigation"><a href="#work">Selected work</a><a href="#about">About</a><a href="#play">Playground</a><a className="nav-contact" href="#contact">Let's talk ↗</a></nav></header>);}
+import Arrow from './Arrow';
+export default function Header(){return (<header><a className="brand" href="#" aria-label="Kasia Kruk home">AK<span>®</span></a><nav aria-label="Main navigation"><a href="#work">Selected work</a><a href="#about">About</a><a href="#play">Playground</a><a className="nav-contact" href="#contact">Let's talk <Arrow/></a></nav></header>);}
