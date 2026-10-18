@@ -1,3 +1,4 @@
+import { playgroundMessages } from './playgroundMessages';
 import { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -23,7 +24,7 @@ export default function CursorFollower({ paused }: { paused: boolean }) {
   };
   const hide = () => {
    visible = false;
-   el.classList.remove('is-visible', 'is-interactive');
+   el.classList.remove('is-visible', 'is-interactive', 'is-galaxy');
    cancelAnimationFrame(frame);
    frame = 0;
   };
@@ -40,6 +41,14 @@ export default function CursorFollower({ paused }: { paused: boolean }) {
    if (!frame) {
     previousTime = performance.now();
     frame = requestAnimationFrame(draw);
+   }
+   const galaxy=event.target instanceof Element?event.target.closest('.nebula-wrap'):null;
+   el.classList.toggle('is-galaxy',!!galaxy);
+   const label=el.querySelector<HTMLElement>('.cursor-message');
+   if(label){
+    const messages=playgroundMessages;
+    const next=galaxy?messages[Math.min(2,Math.max(0,Math.floor((event.clientX-galaxy.getBoundingClientRect().left)/galaxy.getBoundingClientRect().width*3)))]:'';
+    if(label.textContent!==next){label.textContent=next;label.getAnimations().forEach(animation=>animation.cancel());if(next)label.animate([{opacity:0,transform:'translateY(5px)'},{opacity:1,transform:'translateY(0)'}],{duration:220})}
    }
    el.classList.toggle('is-interactive', event.target instanceof Element && !!event.target.closest('a, button, input, select, textarea, [role="button"]'));
   };
@@ -58,5 +67,5 @@ export default function CursorFollower({ paused }: { paused: boolean }) {
    pointer.removeEventListener('change', hide);
   };
  }, [paused]);
- return createPortal(<div ref={dot} className="cursor-follower" aria-hidden="true"><span /></div>, document.body);
+ return createPortal(<div ref={dot} className="cursor-follower" aria-hidden="true"><span className="cursor-ball"><span className="cursor-message" /></span></div>, document.body);
 }
