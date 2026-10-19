@@ -1,4 +1,5 @@
 import Arrow from './Arrow';
+import OddaDesktopPreview from './OddaDesktopPreview';
 
 export default function Work({ onSelect }: { onSelect: (id: 'odda' | 'indigo') => void }) {
   return (
@@ -11,8 +12,13 @@ export default function Work({ onSelect }: { onSelect: (id: 'odda' | 'indigo') =
         <article className="project reveal">
           <a className="visual odda odda-view-preview" href="/work/odda-care" aria-label="Explore Odda Care case study">
             <div className="odda-view-devices">
-              <img className="odda-view-laptop" src="/images/case-studies/odda-laptop.webp" alt="Odda View dashboard on a laptop" width={697} height={462} loading="lazy" />
-              <img className="odda-view-phone" src="/images/case-studies/odda-phone.webp" alt="Odda View mobile dashboard on a phone" width={299} height={551} loading="lazy" />
+              <OddaDesktopPreview className="odda-view-laptop" image="/images/case-studies/odda-laptop-hd.png" alt="Odda View dashboard on a laptop" />
+              <div className="odda-view-phone odda-view-phone-crop">
+                <svg viewBox="700 110 610 930" role="img" aria-label="Odda View mobile dashboard on a phone">
+                  <defs><clipPath id="work-odda-phone-outline"><path d="M715 1030 L753 257 C756 199 783 171 844 160 L1165 125 C1232 115 1268 148 1273 211 L1288 1030 Z" /></clipPath></defs>
+                  <image href="/images/case-studies/alert1.png" width="1382" height="1138" clipPath="url(#work-odda-phone-outline)" />
+                </svg>
+              </div>
             </div>
           </a>
           <div className="project-info">

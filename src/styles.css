@@ -84,3 +84,11 @@ nav .nav-contact{isolation:isolate;overflow:hidden;transition:transform .3s ease
 .no-motion .odda-view-laptop{transform:rotate(-6deg)}
 .no-motion .odda-view-phone{transform:rotate(9deg)}
 @media(prefers-reduced-motion:reduce){.odda-view-laptop{transform:rotate(-6deg)}.odda-view-phone{transform:rotate(9deg)}}
+
+.odda-view-devices>.odda-view-laptop{position:absolute;filter:drop-shadow(0 14px 12px #23302326)}
+.odda-view-devices .odda-desktop-base{position:static;width:100%;filter:none;will-change:auto}
+.odda-view-phone-crop{position:absolute;aspect-ratio:0.64;overflow:hidden;filter:drop-shadow(0 10px 10px #23302326);isolation:isolate;background:transparent}
+.odda-view-phone-crop img{position:absolute;width:238%;max-width:none;left:-123%;top:-13%;filter:none;mix-blend-mode:normal;clip-path:polygon(51.5% 90.5%,54.2% 23%,54.8% 19%,56.5% 16%,59% 14%,85.5% 10.7%,89% 11%,91.4% 13%,92.6% 16%,93.6% 90.5%)}
+
+.odda-view-phone-crop{aspect-ratio:610/930;overflow:visible}
+.odda-view-phone-crop>svg{display:block;width:100%;height:auto}
