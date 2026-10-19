@@ -1,0 +1,119 @@
+.odda-case{--oc-ink:#23362c;--oc-sage:#a0b097;--oc-paper:#f7f5ef;--oc-forest:#263a2d;--oc-cream:#edece4;--oc-yellow:#d6fa45;color:var(--oc-ink);background:var(--oc-paper);font-family:'DM Sans',sans-serif;overflow:hidden}
+.odda-case *{box-sizing:border-box}
+.odda-case h1,.odda-case h2,.odda-case p,.odda-case figure{margin:0}
+.odda-case h1,.odda-case h2{font-family:'Space Grotesk',sans-serif;letter-spacing:-.07em}
+.odda-case h2 em{font-style:normal;font-weight:400}
+.odda-case a{text-decoration:none;color:inherit}
+.odda-case-header{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 4.5%;background:var(--oc-paper);border-bottom:1px solid #23362c23;position:relative;z-index:10}
+.odda-case-logo{font:700 29px/1 'Space Grotesk',sans-serif;letter-spacing:-.08em;display:inline-flex;align-items:flex-start;gap:8px}
+.odda-case-logo span{font-size:15px;letter-spacing:0;color:#769174}
+.odda-case-back,.odda-case-header-cta{font-size:13px;font-weight:600}
+.odda-case-back:hover,.odda-case-all-work:hover{text-decoration:underline;text-underline-offset:5px}
+.odda-case-header-cta{border:1px solid var(--oc-ink);border-radius:60px;padding:13px 19px;display:inline-flex;gap:26px;transition:color .3s,background .3s}
+.odda-case-header-cta:hover{background:var(--oc-ink);color:var(--oc-paper)}
+.odda-case-kicker,.odda-case-eyebrow{font-size:12px;font-weight:600;line-height:1.45;letter-spacing:.15em;text-transform:uppercase}
+.odda-case-hero{background:#d7e1d2;padding:32px 4.5% 30px;position:relative}
+.odda-case-hero-top,.odda-case-hero-bottom,.odda-case-hero-copy{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.odda-case-hero-top span{opacity:.55}
+.odda-case-headline-wrap{position:relative;margin-top:45px}
+.odda-case-headline-wrap h1{font-size:clamp(80px,17vw,270px);line-height:.76;font-weight:600;position:relative;z-index:1;letter-spacing:-.105em;max-width:1350px}
+.odda-case-headline-wrap h1>span{display:block;margin-left:13%;letter-spacing:-.095em}
+.odda-case-period{color:#8b9f82}
+.odda-case-orbit{position:absolute;right:0;top:3%;width:clamp(74px,11vw,175px);height:clamp(74px,11vw,175px);border:1px solid #45644850;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;font-size:clamp(25px,3vw,55px);font-weight:400;color:#526e56}
+.odda-case-orbit span{font-size:clamp(7px,.6vw,10px);letter-spacing:.13em;font-weight:600}
+.odda-case-hero-copy{margin:35px 0 35px;align-items:flex-end}
+.odda-case-hero-copy p:first-child{font-size:clamp(17px,1.65vw,25px);line-height:1.35;letter-spacing:-.03em;max-width:500px}
+.odda-case-scroll-cue{font-size:12px;text-transform:uppercase;letter-spacing:.08em;display:flex;align-items:center;gap:24px;white-space:nowrap}
+.odda-case-scroll-cue span{font-size:23px}
+.odda-case-hero-window{max-width:1460px;margin:0 auto;background:#fff;border:1px solid #24402b1f;border-radius:17px;overflow:hidden;box-shadow:0 25px 55px #1c371d23;will-change:transform}
+.odda-case-browser-bar{display:grid;grid-template-columns:1fr 2fr 1fr;align-items:center;background:#f8f7f3;border-bottom:1px solid #dddcd5;color:#66736c;padding:11px 17px;font-size:11px;text-align:center}
+.odda-case-browser-dots{display:flex;gap:5px}.odda-case-browser-dots i{width:8px;height:8px;border-radius:50%;background:#c2c9c0}.odda-case-browser-dots i:first-child{background:#d4a596}
+.odda-case-browser-symbol{text-align:right;font-size:16px}
+.odda-case-hero-window img{width:100%;height:auto;display:block}
+.odda-case-hero-bottom{font-size:11px;letter-spacing:.045em;margin-top:27px;border-top:1px solid #25442d40;padding-top:16px}
+.odda-case-pad{padding:clamp(85px,10vw,150px) 6.5%}
+.odda-case-story{background:var(--oc-paper)}
+.odda-case-story-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:8%;margin-top:45px}
+.odda-case-story h2,.odda-case-build h2{font-size:clamp(47px,5.4vw,89px);line-height:1.02;font-weight:600}
+.odda-case-story-copy{max-width:620px}
+.odda-case-story-copy p,.odda-case-build-layout p{font-size:clamp(16px,1.35vw,20px);line-height:1.67;margin-bottom:20px}
+.odda-case-story-copy .odda-case-lead{font-size:clamp(19px,1.65vw,24px);font-weight:600;line-height:1.55}
+.odda-case-facts{border-top:1px solid #30473845;margin-top:75px;padding-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.odda-case-facts>div{display:flex;flex-direction:column;gap:14px}
+.odda-case-facts span{font-size:12px;color:#64736b;text-transform:uppercase;letter-spacing:.13em}
+.odda-case-facts strong{font-size:clamp(16px,1.4vw,21px);line-height:1.5;font-weight:500}
+.odda-case-technology{background:var(--oc-forest);color:#f7f5ef}
+.odda-case-section-head{display:flex;justify-content:space-between;align-items:start;gap:20px}
+.odda-case-mini-symbol{font-size:28px;line-height:1}
+.odda-case-technology-intro,.odda-case-experience-intro{display:flex;justify-content:space-between;align-items:end;gap:50px;margin:58px 0 55px}
+.odda-case-technology-intro h2,.odda-case-experience-intro h2{font-size:clamp(48px,6.2vw,103px);line-height:.98;font-weight:600;flex:1.6}
+.odda-case-technology-intro p,.odda-case-experience-intro p{font-size:clamp(16px,1.4vw,20px);line-height:1.6;max-width:390px;flex:1}
+.odda-case-sensor-frame{border-radius:21px;padding:clamp(15px,3vw,48px);background:#f9f8f4;color:var(--oc-ink)}
+.odda-case-sensor-frame img{display:block;width:100%;height:auto;border-radius:7px}
+.odda-case-sensor-frame figcaption{display:flex;justify-content:space-between;gap:15px;border-top:1px solid #bcc4b9;margin-top:18px;padding-top:17px;font-size:11px;text-transform:uppercase;letter-spacing:.12em}
+.odda-case-experience{background:#e5e9de}
+.odda-case-experience-intro{margin-bottom:56px}
+.odda-case-product-grid{display:grid;grid-template-columns:.9fr 1.35fr;gap:22px;align-items:stretch}
+.odda-case-device-panel{position:relative;border-radius:20px;overflow:hidden;min-height:630px;display:flex;align-items:center;justify-content:center;padding:80px 25px 35px}
+.odda-case-device-mobile{background:#f7f5ef}
+.odda-case-device-desktop{background:#b7c9b0}
+.odda-case-device-meta{position:absolute;top:25px;left:28px;right:28px;display:flex;justify-content:space-between;gap:20px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.odda-case-phone{width:min(75%,330px);height:auto;display:block;filter:drop-shadow(17px 24px 18px #1a2e1d26);transform-origin:center center}
+.odda-case-laptop{width:min(95%,760px);height:auto;display:block;filter:drop-shadow(17px 25px 22px #1a2e1d28);transform-origin:center center}
+.odda-case-disclaimer{font-size:12px;line-height:1.5;opacity:.7;text-align:right;margin-top:16px!important}
+.odda-case-build{background:var(--oc-paper)}
+.odda-case-build-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:8%;margin-top:40px}
+.odda-case-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:32px}
+.odda-case-tags span{font-size:12px;line-height:1.3;padding:11px 16px;border:1px solid #879889;border-radius:100px}
+.odda-case-next{background:#222a24;color:#f7f5ef;padding-bottom:26px}
+.odda-case-next-top{display:flex;justify-content:space-between;gap:20px;font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+.odda-case-next h2{font-size:clamp(62px,10.5vw,176px);font-weight:600;line-height:.94;margin:95px 0 75px;letter-spacing:-.084em}
+.odda-case-next h2 em{color:#b4c7ac}
+.odda-case-next-links{display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.odda-case-contact-link{background:var(--oc-yellow);color:#222a24!important;padding:19px 24px;border-radius:100px;display:inline-flex;gap:55px;align-items:center;font-size:15px;font-weight:700;transition:transform .25s ease}
+.odda-case-contact-link:hover{transform:translateY(-4px)}
+.odda-case-all-work{font-size:13px}
+.odda-case-footer{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap;border-top:1px solid #ffffff4b;margin-top:130px;padding-top:23px;font-size:12px}
+@media(max-width:900px){
+  .odda-case-story-grid,.odda-case-build-layout{grid-template-columns:1fr;gap:35px}
+  .odda-case-technology-intro,.odda-case-experience-intro{flex-direction:column;align-items:stretch;gap:25px}
+  .odda-case-technology-intro p,.odda-case-experience-intro p{max-width:630px}
+  .odda-case-device-panel{min-height:490px}
+}
+@media(max-width:700px){
+  .odda-case-header{padding:16px 5%}
+  .odda-case-header-cta{padding:10px 13px;gap:8px}
+  .odda-case-hero{padding:25px 5% 22px}
+  .odda-case-hero-top .odda-case-kicker:last-child{display:none}
+  .odda-case-headline-wrap{margin-top:65px}
+  .odda-case-headline-wrap h1{font-size:clamp(65px,17vw,120px)}
+  .odda-case-headline-wrap h1>span{margin-left:4%}
+  .odda-case-orbit{top:-43px;right:-6px;width:68px;height:68px}
+  .odda-case-orbit span{font-size:6px}
+  .odda-case-hero-copy{align-items:start;flex-direction:column;gap:22px;margin:27px 0}
+  .odda-case-hero-copy p:first-child{font-size:17px}
+  .odda-case-scroll-cue{font-size:11px}
+  .odda-case-browser-bar{padding:8px 10px;font-size:9px}
+  .odda-case-hero-bottom span:last-child{display:none}
+  .odda-case-pad{padding:75px 5%}
+  .odda-case-story-grid{margin-top:30px}
+  .odda-case-story h2,.odda-case-build h2{font-size:clamp(42px,9vw,65px)}
+  .odda-case-facts{grid-template-columns:1fr 1fr;row-gap:24px;margin-top:50px}
+  .odda-case-technology-intro,.odda-case-experience-intro{margin:35px 0}
+  .odda-case-technology-intro h2,.odda-case-experience-intro h2{font-size:clamp(45px,9.5vw,72px)}
+  .odda-case-product-grid{grid-template-columns:1fr;gap:16px}
+  .odda-case-device-panel{min-height:520px}
+  .odda-case-device-desktop{min-height:410px}
+  .odda-case-next h2{font-size:clamp(54px,12.8vw,98px);margin:70px 0 48px}
+  .odda-case-footer{margin-top:90px}
+}
+@media(max-width:420px){
+  .odda-case-header-cta{display:none}
+  .odda-case-headline-wrap h1{font-size:17.5vw}
+  .odda-case-sensor-frame figcaption span:last-child{display:none}
+  .odda-case-device-panel{min-height:460px;padding:65px 12px 25px}
+  .odda-case-device-desktop{min-height:330px}
+  .odda-case-device-meta{left:14px;right:14px;font-size:9px}
+  .odda-case-facts{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){.odda-case *{animation:none!important;scroll-behavior:auto!important;transition:none!important;transform:none!important}}

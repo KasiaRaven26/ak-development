@@ -72,3 +72,15 @@ nav .nav-contact{isolation:isolate;overflow:hidden;transition:transform .3s ease
 .nebula-wrap{box-shadow:0 0 24px 2px #b565d91a,0 0 55px 8px #729aff0d;border-color:#d9b7ef33}
 
 .play-hint-touch,.nebula-touch-target{display:none}.sr-play-message{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.nebula-touch-ball{position:absolute;display:grid;place-items:center;transform:translate(-50%,-50%);width:112px;height:112px;padding:12px;border-radius:50%;background:var(--lime);color:var(--ink);font:500 12px/1.3 'DM Sans',sans-serif;text-align:center;pointer-events:none;animation:touch-ball-enter .25s ease-out both}@keyframes touch-ball-enter{from{opacity:0;transform:translate(-50%,-50%) scale(.85)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}@media(hover:none),(pointer:coarse){.play-hint-desktop{display:none}.play-hint-touch{display:inline}.nebula-touch-target{display:block;position:absolute;inset:0;z-index:2;width:100%;height:100%;border:0;background:transparent;touch-action:pan-y}.nebula-wrap .canvas-caption{z-index:3}}
+
+
+.odda-view-preview{justify-content:center}
+.odda-view-devices{position:relative;width:100%;max-width:640px;aspect-ratio:1.55}
+.odda-view-devices img{position:absolute;display:block;height:auto;filter:drop-shadow(0 14px 12px #23302326);will-change:transform}
+.odda-view-laptop{width:86%;left:1%;top:10%;animation:odda-laptop-float 7s ease-in-out infinite}
+.odda-view-phone{width:25%;right:1%;bottom:0;animation:odda-phone-float 6s ease-in-out infinite}
+@keyframes odda-laptop-float{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-10px) rotate(-3deg)}}
+@keyframes odda-phone-float{0%,100%{transform:translateY(-5px) rotate(9deg)}50%{transform:translateY(7px) rotate(5deg)}}
+.no-motion .odda-view-laptop{transform:rotate(-6deg)}
+.no-motion .odda-view-phone{transform:rotate(9deg)}
+@media(prefers-reduced-motion:reduce){.odda-view-laptop{transform:rotate(-6deg)}.odda-view-phone{transform:rotate(9deg)}}
